@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color:#0a0f0f;
+    background-color:#202020;
 }
 
 h1 { 
@@ -38,3 +38,34 @@ header {
 }
 
 video {outline: none;}
+
+/* -------- FORM STYLES ---------- */
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 3rem;
+    background-color:#202020;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color:#A0A0A0;
+    outline: none;;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
