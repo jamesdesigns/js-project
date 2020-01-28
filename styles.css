@@ -14,7 +14,8 @@ h1 {
 }
 
 header {
-    /* border-bottom: 1px solid#808080; */
+    background-color: #181818;
+    box-shadow: 6px 6px 5px black;
 }
 
 .collection {
