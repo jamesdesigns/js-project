@@ -8,14 +8,12 @@ body {
 }
 
 h1 { 
-    text-align: left;
+    text-align: center;
     color: #fff;
-    margin-left: 7rem;
 }
 
 header {
     background-color: #181818;
-    box-shadow: 6px 6px 5px black;
 }
 
 .collection {
