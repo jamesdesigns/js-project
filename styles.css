@@ -18,11 +18,16 @@ header {
 
 .row {
     text-align: center;
-
+    margin-top: 1.5rem;
 }
 .row a { 
     text-decoration: none;
     color: white;
+}
+
+.btn {
+    padding: 10px 35px;
+    border: 1px solid white;
 }
 
 .collection {
