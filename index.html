@@ -13,8 +13,16 @@
 <header>
     <h1>The Witcher</h1>
     <form>
-        <input type="text" name="search" placeholder="Search Characters...">
+        <input type="text" name="search" id="search-item" placeholder="Search Characters...">
     </form>
+    <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn filter-btn m-2" data-filter="all">All</a>
+          <a href="#" class="btn filter-btn m-2" data-filter="witcher">The Witcher</a>
+          <a href="#" class="btn filter-btn m-2" data-filter="fortnite">Fortnite</a>
+          <a href="#" class="btn filter-btn m-2" data-filter="worldofwarcraft">World of Warcraft</a>
+        </div>
+      </div>
 </header>  
 
 <section>
@@ -199,5 +207,6 @@
 
     </div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>

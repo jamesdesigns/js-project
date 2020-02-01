@@ -16,6 +16,15 @@ header {
     background-color: #181818;
 }
 
+.row {
+    text-align: center;
+
+}
+.row a { 
+    text-decoration: none;
+    color: white;
+}
+
 .collection {
     display: flex;
     justify-content: center;
