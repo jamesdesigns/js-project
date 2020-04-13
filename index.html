@@ -14,7 +14,7 @@
     <!-- <h1>The Witcher</h1> -->
     <img id="thelogo" class="logo" src="images/witcher-logo.png" alt="The Witcher" width="350" height="200" />
     <form>
-        <input type="text" name="search" id="search-item" placeholder="Search Characters...">
+        <input type="text" name="search" id="searchbar" onkeyup="search_character()" placeholder="Search Characters...">
     </form>
     <!-- <div class="row">
         <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
@@ -29,183 +29,208 @@
 <section>
 
     <div class="collection">
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/162108.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/162108.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/112107.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/112107.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
+            <div id="one" class="character">
+                <p>One</p>
+                <div class="shadow">
+                    <video width="280" height="400" controls loop>
+                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/mp4">
+                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
 
-        <div class="character">
-            <video width="280" height="400"controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/112108.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/112108.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/112101.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/112101.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/132104.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/132104.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/132204.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/132204.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200167.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200167.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/201817.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/201817.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/142211.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/142211.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/152402.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/152402.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200052.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200052.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200165.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200165.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/202249.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/202249.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/162101.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/162101.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/162202.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/162202.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200162.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200162.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200062.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200062.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200098.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200098.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/142107.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/142107.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/112206.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/112206.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/200168.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/200168.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/122201.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/122201.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
-        <div class="character">
-            <video width="280" height="400" controls loop>
-                <source src="https://gwent.seven7y.com/video/webm/card/142103.webm" type="video/mp4">
-                <source src="https://gwent.seven7y.com/video/webm/card/142103.webm" type="video/ogg">
-              Your browser does not support the video tag.
-              </video>
-        </div>
+            <div id="two" class="character">
+                <p>Two</p>
+                <div class="shadow">
+                    <video width="280" height="400" controls loop>
+                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/mp4">
+                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                 </div>
+            </div>
+            <div id="three" class="character">
+                <p>Three</p>
+                <div class="shadow">
+                    <video width="280" height="400" controls loop>
+                        <source src="https://gwent.seven7y.com/video/webm/card/162108.webm" type="video/mp4">
+                        <source src="https://gwent.seven7y.com/video/webm/card/162108.webm" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div id="four" class="character">
+                <p>Four</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/112107.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/112107.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
 
+            <div class="character">
+                <p>Five</p>
+                <video width="280" height="400"controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/112108.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/112108.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Six</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/112101.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/112101.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Seven</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/132104.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/132104.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Eight</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/132204.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/132204.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Nine</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200167.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200167.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Ten</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/201817.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/201817.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Eleven</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/142211.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/142211.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Twelve</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/152402.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/152402.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Thirteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200052.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200052.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Fourteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200165.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200165.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Fifteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/202249.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/202249.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Sixteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/162101.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/162101.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Seventeen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/162202.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/162202.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Eighteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200162.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200162.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <p>Nineteen</p>
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200062.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200062.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200098.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200098.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/142107.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/142107.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/112206.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/112206.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/200168.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/200168.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/122201.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/122201.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="character">
+                <video width="280" height="400" controls loop>
+                    <source src="https://gwent.seven7y.com/video/webm/card/142103.webm" type="video/mp4">
+                    <source src="https://gwent.seven7y.com/video/webm/card/142103.webm" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </div>
     </div>
 </section>
 <script src="script.js"></script>

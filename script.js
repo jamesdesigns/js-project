@@ -26,26 +26,43 @@
 })();
 
 //wire up filter search box
-(function(){
+// (function(){
 
-    const searchBox = document.querySelector('#search-item')
-    const storeItems = document.querySelectorAll('.store-item')
+//     const searchBox = document.querySelector('#search-item')
+//     const storeItems = document.querySelectorAll('.store-item')
 
-    searchBox.addEventListener('keyup', (e) => {
+//     searchBox.addEventListener('keyup', (e) => {
     
-        const searchFilter = e.target.value.toLowerCase().trim()
-        //display only items that contain filter input
+//         const searchFilter = e.target.value.toLowerCase().trim()
+//         //display only items that contain filter input
 
-        storeItems.forEach((item) => {
-            if (item.textContent.includes(searchFilter)){
-                item.style.display = 'block'
-            } else {
-                item.style.display = 'none'
-            }
-        })
-    })
+//         storeItems.forEach((item) => {
+//             if (item.textContent.includes(searchFilter)){
+//                 item.style.display = 'block'
+//             } else {
+//                 item.style.display = 'none'
+//             }
+//         })
+//     })
 
-})();
+// })();
+
+// JavaScript code 
+function search_character() { 
+	let input = document.getElementById('searchbar').value 
+	input=input.toLowerCase(); 
+	let x = document.getElementsByClassName('character'); 
+	
+	for (i = 0; i < x.length; i++) { 
+		if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+			x[i].style.display="none"; 
+		} 
+		else { 
+			x[i].style.display="list-item";				 
+		} 
+	} 
+} 
+
 
 
 

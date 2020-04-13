@@ -13,6 +13,10 @@ h1 {
     color: #fff;
 }
 
+p {
+    color: gray;
+}
+
 header {
     background-color: #181818;
 }
@@ -55,12 +59,12 @@ header {
 
 .character {
     display:block;
-    background-color: black;
+    /* background-color: black; */
     width: 280px;
     height: 400px;
     margin: 50px;
     margin-bottom: 50px;
-    box-shadow: 6px 6px 5px black;
+    /* box-shadow: 6px 6px 5px black; */
 
 }
 
@@ -68,7 +72,12 @@ header {
     transform: scale(1.015);
 }
 
-video {outline: none;}
+video {
+    outline: none;
+}
+.shadow {
+    box-shadow: 6px 6px 5px black;
+}
 
 /* -------- FORM STYLES ---------- */
 
