@@ -1,3 +1,5 @@
+"use strict";
+
 // JavaScript
 (function(){
     // refactor to get rid of DRY code
@@ -103,3 +105,11 @@ logoSize = function () {
 }
 
 logoSize();
+
+
+fetch('./witcher.json')
+                .then(res => res.json())
+                .then(data => {
+                  console.log(data.name)
+                })
+                .catch(err => console.error(err));
