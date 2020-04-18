@@ -107,14 +107,14 @@ logoSize = function () {
 logoSize();
 
 
-fetch('./witcher.json')
-                .then(res => res.json())
-                .then(data => {
-                  console.log(data.name)
-                })
-                .catch(err => console.error(err));
+// fetch('./witcher.json')
+//                 .then(res => res.json())
+//                 .then(data => {
+//                   console.log(data.name)
+//                 })
+//                 .catch(err => console.error(err));
 
-function myFunction(arr) {
+function witcher(arr) {
     var out = "";
     var i;
     for(i = 0; i<arr.length; i++) {

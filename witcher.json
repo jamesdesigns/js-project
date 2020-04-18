@@ -1,4 +1,4 @@
-[
+witcher([
     {
       "name": "Geralt of Rivia",
       "charClass": "Witcher",
@@ -174,4 +174,4 @@
       "poster": "https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg",
       "description": "Iorweth (Iorveth in the English version of the games) was an Aen Seidhe elf and the commander of the last Scoia'tael commando to be broken during the second war with Nilfgaard."
     }
-  ]
+  ]);
