@@ -113,3 +113,13 @@ fetch('./witcher.json')
                   console.log(data.name)
                 })
                 .catch(err => console.error(err));
+
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i<arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' + 
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("one").innerHTML = out;
+    }
