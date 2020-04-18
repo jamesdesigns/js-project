@@ -8,11 +8,15 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+
+    </head>
 <body>
 <header>
     <!-- <h1>The Witcher</h1> -->
-    <img id="thelogo" class="logo" src="images/witcher-logo.png" alt="The Witcher" width="350" height="200" />
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+
     <form>
         <input type="text" name="search" id="searchbar" onkeyup="search_character()" placeholder="Search Characters...">
     </form>
@@ -30,15 +34,16 @@
 
     <div class="collection">
             <div id="one" class="character">
+                
                 <p>Geralt of Rivia</p>
+                <a href="./character/geralt-of-rivia.html">
                 <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
-                    <!-- <video width="280" height="400" controls loop>
-                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type='video/mp4'>
-                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type='video/ogg'>
-                    Your browser does not support the video tag.
-                    </video> -->
+                    
+                    <img class="player lazy" src="blank.gif" data-src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
+
+                
                 </div>
+            </a>
             </div>
 
             <div id="two" class="character">
@@ -334,5 +339,30 @@
     </div>
 </section>
 <script src="script.js"></script>
+<!-- <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "30px";
+      } else {
+        document.getElementById("header").style.fontSize = "90px";
+      }
+    }
+    </script> -->
+
+    <script>
+        var logo = document.querySelector('.logo');
+        var handleResize = function(e) {
+            if (document.body.scrollTop === 0) {
+                logo.classList.remove("resize");
+            } else {
+                logo.classList.add("resize");
+            }
+        };
+        document.addEventListener('scroll', handleResize);
+
+    </script>
 </body>
 </html>

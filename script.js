@@ -1,54 +1,5 @@
 "use strict";
 
-// JavaScript
-(function(){
-    // refactor to get rid of DRY code
-    const buttons = document.querySelectorAll('.btn')
-    const storeItems = document.querySelectorAll('.store-item')
-
-    buttons.forEach((button)=> {
-        button.addEventListener('click', (e) => {
-            e.preventDefault()
-            const filter = e.target.dataset.filter
-            
-            storeItems.forEach((item)=> {
-                if (filter === 'all'){
-                    item.style.display = 'block'
-                } else {
-                    if (item.classList.contains(filter)){
-                        item.style.display = 'block'
-                    } else {
-                        item.style.display = 'none'
-                    }
-                }
-            })
-        })
-    })
-
-})();
-
-//wire up filter search box
-// (function(){
-
-//     const searchBox = document.querySelector('#search-item')
-//     const storeItems = document.querySelectorAll('.store-item')
-
-//     searchBox.addEventListener('keyup', (e) => {
-    
-//         const searchFilter = e.target.value.toLowerCase().trim()
-//         //display only items that contain filter input
-
-//         storeItems.forEach((item) => {
-//             if (item.textContent.includes(searchFilter)){
-//                 item.style.display = 'block'
-//             } else {
-//                 item.style.display = 'none'
-//             }
-//         })
-//     })
-
-// })();
-
 // JavaScript code 
 function search_character() { 
 	let input = document.getElementById('searchbar').value; 
@@ -69,44 +20,6 @@ function search_character() {
 
 
 
-logoSize = function () {
-    // Get the real width of the logo image
-    var theLogo = $("#thelogo");
-    var newImage = new Image();
-    newImage.src = theLogo.attr("src");
-    var imgWidth = newImage.width;
-    
-    // distance over which zoom effect takes place
-    var maxScrollDistance = 1300;
-    
-    // set to window height if larger
-    maxScrollDistance = Math.min(maxScrollDistance, $(window).height());
-    
-    // width at maximum zoom out (i.e. when window has scrolled maxScrollDistance)
-    var widthAtMax = 500;
-    
-    // calculate diff and how many pixels to zoom per pixel scrolled
-    var widthDiff = imgWidth - widthAtMax;
-    var pixelsPerScroll =(widthDiff / maxScrollDistance);
-
-    $(window).scroll(function () {
-        // the currently scrolled-to position - max-out at maxScrollDistance
-        var scrollTopPos = Math.min($(document).scrollTop(), maxScrollDistance);
-        
-        // how many pixels to adjust by
-        var scrollChangePx =  Math.floor(scrollTopPos * pixelsPerScroll);
-        
-        // calculate the new width
-        var zoomedWidth = imgWidth - scrollChangePx;
-        
-        // set the width
-        $('.logo').css('width', zoomedWidth);
-    });
-}
-
-logoSize();
-
-
 // fetch('./witcher.json')
 //                 .then(res => res.json())
 //                 .then(data => {
@@ -114,3 +27,83 @@ logoSize();
 //                 })
 //                 .catch(err => console.error(err));
 
+/* lazyload.js (c) Lorenzo Giuliani
+ * MIT License (http://www.opensource.org/licenses/mit-license.html)
+ *
+ * expects a list of:  
+ * `<img src="blank.gif" data-src="my_image.png" width="600" height="400" class="lazy">`
+ */
+
+!function(window){
+    var $q = function(q, res){
+          if (document.querySelectorAll) {
+            res = document.querySelectorAll(q);
+          } else {
+            var d=document
+              , a=d.styleSheets[0] || d.createStyleSheet();
+            a.addRule(q,'f:b');
+            for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
+              l[b].currentStyle.f && c.push(l[b]);
+  
+            a.removeRule(0);
+            res = c;
+          }
+          return res;
+        }
+      , addEventListener = function(evt, fn){
+          window.addEventListener
+            ? this.addEventListener(evt, fn, false)
+            : (window.attachEvent)
+              ? this.attachEvent('on' + evt, fn)
+              : this['on' + evt] = fn;
+        }
+      , _has = function(obj, key) {
+          return Object.prototype.hasOwnProperty.call(obj, key);
+        }
+      ;
+  
+    function loadImage (el, fn) {
+      var img = new Image()
+        , src = el.getAttribute('data-src');
+      img.onload = function() {
+        if (!! el.parent)
+          el.parent.replaceChild(img, el)
+        else
+          el.src = src;
+  
+        fn? fn() : null;
+      }
+      img.src = src;
+    }
+  
+    function elementInViewport(el) {
+      var rect = el.getBoundingClientRect()
+  
+      return (
+         rect.top    >= 0
+      && rect.left   >= 0
+      && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+      )
+    }
+  
+      var images = new Array()
+        , query = $q('img.lazy')
+        , processScroll = function(){
+            for (var i = 0; i < images.length; i++) {
+              if (elementInViewport(images[i])) {
+                loadImage(images[i], function () {
+                  images.splice(i, i);
+                });
+              }
+            };
+          }
+        ;
+      // Array.prototype.slice.call is not callable under our lovely IE8 
+      for (var i = 0; i < query.length; i++) {
+        images.push(query[i]);
+      };
+  
+      processScroll();
+      addEventListener('scroll',processScroll);
+  
+  }(this);
