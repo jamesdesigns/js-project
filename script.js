@@ -114,4 +114,3 @@ logoSize();
 //                 })
 //                 .catch(err => console.error(err));
 
-
