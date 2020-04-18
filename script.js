@@ -51,7 +51,7 @@
 
 // JavaScript code 
 function search_character() { 
-	let input = document.getElementById('searchbar').value 
+	let input = document.getElementById('searchbar').value; 
 	input=input.toLowerCase(); 
 	let x = document.getElementsByClassName('character'); 
 	

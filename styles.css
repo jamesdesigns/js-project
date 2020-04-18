@@ -75,6 +75,13 @@ header {
 video {
     outline: none;
 }
+
+img.player {
+    width: 280px;
+    height: 400px;
+    background-repeat: no-repeat
+}
+
 .shadow {
     box-shadow: 6px 6px 5px black;
 }
