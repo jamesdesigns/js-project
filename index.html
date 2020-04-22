@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
 
     </head>
 <body>
@@ -33,33 +34,106 @@
 <section>
 
     <div class="collection">
-            <div id="one" class="character">
-                
-                <p>Geralt of Rivia</p>
-                <a href="./character/geralt-of-rivia.html">
-                <div class="shadow">
-                    
-                    <img class="player lazy" src="blank.gif" data-src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
 
-                
+            <div id="one" class="character">
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn"> 
+                <p class="text-center">Geralt of Rivia</p>
+                <div class="shadow">
+                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
                 </div>
-            </a>
+            </button>
+            </div>
+
+           <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="container">
+                        <video width="280" height="400" controls loop>
+                            <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/mp4">
+                            <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/ogg">
+                        Your browser does not support the video tag.
+                        </video>
+                        <div class="data">
+                            <h1 class="align-left">Geralt of Rivia</h1> 
+                            <h3>Character:</h3>
+                            <p>Witcher</p>
+                            <h3>Stats:</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="two" class="character">
-                <p>Triss Merigold</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
-
-                    <!-- <video width="280" height="400" controls loop>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn"> 
+                  <p class="text-center">Triss Merigold</p>
+                  <!-- <a href="geraltofrivia.html"> -->
+                  <div class="shadow">
+                      <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
+                  </div>
+                  <!-- </a> -->
+                  </button>
+           </div>       
+           <!-- The Modal -->
+           <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="container">
+                    <video width="280" height="400" controls loop>
                         <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/mp4">
                         <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/ogg">
                     Your browser does not support the video tag.
-                    </video> -->
-                 </div>
+                    </video>
+                    <div class="data">
+                        <h1 class="align-left">Triss Merigold</h1> 
+                        <h3>Character:</h3>
+                        <p>Sorceress</p>
+                        <h3>Stats:</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+
+            <!-- <div id="two" class="character">
+
+                  <button id="myBtn"> 
+                    <p class="text-center">Triss Merigold</p>
+                    <div class="shadow">
+                        <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
+                    </div>
+                    </button>
+             </div>       
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="container">
+                    <video width="280" height="400" controls loop>
+                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/mp4">
+                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                        <div class="data">
+                        <h1 class="align-left">Triss Merigold</h1> 
+                        <h3>Character:</h3>
+                        <p>Witcher</p>
+                        <h3>Stats:</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
             <div id="three" class="character">
-                <p>Xarthisius</p>
+                <p class="text-center">Xarthisius</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" />
 <!-- 
@@ -71,7 +145,7 @@
                 </div>
             </div>
             <div id="four" class="character">
-                <p>Dragon</p>
+                <p class="text-center">Dragon</p>
                 <div class="shadow">
                 <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" />
 
@@ -84,7 +158,7 @@
             </div>
 
             <div class="character">
-                <p>Yennefer of Vengerberg</p>
+                <p class="text-center">Yennefer of Vengerberg</p>
                 <div class="shadow">
                 <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" />
 
@@ -96,7 +170,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Cirilla Fiona Elen Riannon</p>
+                <p class="text-center">Cirilla Fiona Elen Riannon</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" />
 
@@ -108,7 +182,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Caranthir Ar-Feiniel</p>
+                <p class="text-center">Caranthir Ar-Feiniel</p>
                 <div class="shadow">
                 <img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/135/634/large/marek-madej-caranthir-by-marekmadej.jpg" alt="Caranthir Ar-Feiniel" />
 
@@ -120,7 +194,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Frightener</p>
+                <p class="text-center">Frightener</p>
                 <div class="shadow">
                 <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/850/417/large/marta-dettlx-przeraza-small.jpg" alt="Frightener" />
 
@@ -132,7 +206,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Brouver Hoog</p>
+                <p class="text-center">Brouver Hoog</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/392/006/large/bryan-sola-brouver-hoog.jpg" alt="Brouver Hoog" />
 
@@ -144,7 +218,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Ihuarraquax</p>
+                <p class="text-center">Ihuarraquax</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/953/986/large/anna-podedworna-ihuarraquaxda.jpg" alt="Ihuarraquax" />
 
@@ -156,7 +230,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Aelirenn</p>
+                <p class="text-center">Aelirenn</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/829/365/large/lorenzo-mastroianni-gwent-aelirenn-lorenzo-mastroianni.jpg" alt="Aelirenn" />
 
@@ -168,7 +242,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Hemdall</p>
+                <p class="text-center">Hemdall</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/003/003/434/large/anna-podedworna-hemdall.jpg" alt="Hemdall" />
 
@@ -180,7 +254,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Golyat</p>
+                <p class="text-center">Golyat</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/011/041/090/large/bryan-sola-golyat.jpg" alt="Golyat" />
 
@@ -192,7 +266,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Francesca Findabair</p>
+                <p class="text-center">Francesca Findabair</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/003/937/770/large/lorenzo-mastroianni-gwent-francesca-lorenzo-mastroianni.jpg" alt="Francesca Findabair" />
 
@@ -204,7 +278,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>King Roegner</p>
+                <p class="text-center">King Roegner</p>
                 <div class="shadow">
                     <img class="player" src="https://vignette.wikia.nocookie.net/witcher/images/9/98/Gwent_roegner_of_ebbing.jpeg" alt="King Roegner" />
 
@@ -216,7 +290,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Letho of Gulet</p>
+                <p class="text-center">Letho of Gulet</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/277/771/large/lorenzo-mastroianni-gwent-letho-lorenzo-mastroianni.jpg" alt="Letho of Gulet" />
 
@@ -228,7 +302,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Assire var Anahid</p>
+                <p class="text-center">Assire var Anahid</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/311/235/large/anna-podedworna-assire1.jpg" alt="Assire var Anahid" />
 
@@ -240,7 +314,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Emhyr var Emreis</p>
+                <p class="text-center">Emhyr var Emreis</p>
                 <div class="shadow">
                     <img class="player" src="https://cdna.artstation.com/p/assets/images/images/005/002/574/large/nemanja-stankovic-emhyr.jpg" alt="Emhyr var Emreis" />
 
@@ -252,7 +326,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Aguara</p>
+                <p class="text-center">Aguara</p>
                 <div class="shadow">
                     <img class="player" src="https://vignette.wikia.nocookie.net/witcher/images/9/94/Gwent_cardart_neutral_aguara.jpg" alt="Aguara" />
 
@@ -264,7 +338,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Vincent Meis</p>
+                <p class="text-center">Vincent Meis</p>
                 <div class="shadow">
                     <img class="player" src="https://vignette.wikia.nocookie.net/witcher/images/e/e7/Vincent_Meis_werewolf_Gwent_card_art.jpeg" alt="Vincent Meis" />
 
@@ -276,7 +350,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Ithlinne Aegli aep Aevenien</p>
+                <p class="text-center">Ithlinne Aegli aep Aevenien</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/007/205/517/large/bryan-sola-ithlinne-aegli.jpg" alt="Ithlinne Aegli aep Aevenien" />
 
@@ -288,7 +362,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Ocvist</p>
+                <p class="text-center">Ocvist</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/821/581/large/bartlomiej-gawel-ocvist.jpg" alt="Ocvist" />
 
@@ -300,7 +374,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>King Foltest</p>
+                <p class="text-center">King Foltest</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/006/907/285/large/stanton-feng-foltest-1.jpg" alt="King Foltest" />
 
@@ -324,7 +398,7 @@
                 </div>
             </div>
             <div class="character">
-                <p>Iorveth</p>
+                <p class="text-center">Iorveth</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg" alt="Iorveth" />
 
@@ -364,5 +438,32 @@
         document.addEventListener('scroll', handleResize);
 
     </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
