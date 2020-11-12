@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <style>
+        .link-title {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .link-title:hover,
+        .link-title:active {
+            color: red;
+        }
+
         .modalDialog {
             position: fixed;
             font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +42,7 @@
         }
     
         .modalDialog > div {
-            width: 18%;
+            width: 20%;
             position: relative;
             margin: 10% auto;
             padding: 5px 20px 13px 20px;
@@ -95,7 +105,7 @@
         <div id="one" class="character">
             <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
-                <p class="text-center"><a href="#openModal1">Geralt of Rivia</a></p>
+                <p class="text-center"><a class="link-title" href="#openModal1">Geralt of Rivia</a></p>
                 <div class="shadow">
                     <a href="#openModal1"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" /></a>
                 </div>
@@ -125,7 +135,7 @@
             <div id="two" class="character">
                 <!-- Trigger/Open The Modal -->
                 <button class="myBtn"> 
-                    <p class="text-center"><a href="#openModal2">Triss Merigold</a></p>
+                    <p class="text-center"><a class="link-title" href="#openModal2">Triss Merigold</a></p>
                     <div class="shadow">
                         <a href="#openModal2"><img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" /></a>
                     </div>
@@ -156,7 +166,7 @@
         <div id="three" class="character">
             <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
-                <p class="text-center"><a href="#openModal3">Xarthisius</a></p>
+                <p class="text-center"><a class="link-title" href="#openModal3">Xarthisius</a></p>
                 <div class="shadow">
                     <a href="#openModal3"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" /></a>
                 </div>
@@ -186,7 +196,7 @@
         <div id="four" class="character">
             <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
-                <p class="text-center"><a href="#openModal4">Dragon</a></p>
+                <p class="text-center"><a  class="link-title"href="#openModal4">Dragon</a></p>
                 <div class="shadow">
                     <a href="#openModal4"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" /></a>
                 </div>
@@ -215,7 +225,7 @@
                <div id="five" class="character">
                 <!-- Trigger/Open The Modal -->
                 <button class="myBtn"> 
-                    <p class="text-center"><a href="#openModal5">Yennefer of Vengerberg</a></p>
+                    <p class="text-center"><a class="link-title" href="#openModal5">Yennefer of Vengerberg</a></p>
                     <div class="shadow">
                         <a href="#openModal5"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" /></a>
                     </div>
@@ -239,6 +249,64 @@
                 </div>
             </div>
             <!-- END OF New Snippet TEST 5 -->
+
+                    <!-- New Snippet TEST 6 -->
+                    <div id="six" class="character">
+                    <!-- Trigger/Open The Modal -->
+                    <button class="myBtn"> 
+                        <p class="text-center"><a class="link-title" href="#openModal6">Cirilla Fiona Elen Riannon</a></p>
+                        <div class="shadow">
+                            <a href="#openModal6"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" /></a>
+                        </div>
+                    </button>
+                </div>
+                
+        
+                <div id="openModal6" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h1 class="align-left">Cirilla Fiona Elen Riannon</h1> 
+        
+                        <div class="shadow">
+                            <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" />
+                        </div>
+        
+                        <div class="data">
+                            <h3>Character:</h3>
+                            <p>Female</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF New Snippet TEST 6 -->
+
+                <!-- New Snippet TEST 7 -->
+                <div id="seven" class="character">
+                    <!-- Trigger/Open The Modal -->
+                    <button class="myBtn"> 
+                        <p class="text-center"><a class="link-title" href="#openModal7">Caranthir Ar-Feiniel</a></p>
+                        <div class="shadow">
+                            <a href="#openModal7"><img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/135/634/large/marek-madej-caranthir-by-marekmadej.jpg" alt="Caranthir Ar-Feiniel" /></a>
+                        </div>
+                    </button>
+                </div>
+                
+        
+                <div id="openModal7" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+                        <h1 class="align-left">Caranthir Ar-Feiniel</h1> 
+        
+                        <div class="shadow">
+                            <img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/135/634/large/marek-madej-caranthir-by-marekmadej.jpg" alt="Caranthir Ar-Feiniel" />
+                        </div>
+        
+                        <div class="data">
+                            <h3>Character:</h3>
+                            <p>Dark Knight</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF New Snippet TEST 6 -->
 
 
 
