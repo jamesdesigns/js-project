@@ -9,7 +9,62 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
-
+    <style>
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity:0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+    
+        .modalDialog:target {
+            opacity:1;
+            pointer-events: auto;
+        }
+    
+        .modalDialog > div {
+            width: 18%;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #000;
+            color: white;
+            /* background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999); */
+        }
+    
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+    
+        .close:hover { background: #00d9ff; }
+    </style>
     </head>
 <body>
 <header>
@@ -31,121 +86,169 @@
       </div> -->
 </header>  
 
+
 <section>
 
     <div class="collection">
 
-            <div id="one" class="character">
-                <!-- Trigger/Open The Modal -->
-                <button class="myBtn"> 
-                <p class="text-center">Geralt of Rivia</p>
+        <!-- New Snippet TEST 1 -->
+        <div id="one" class="character">
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn"> 
+                <p class="text-center"><a href="#openModal1">Geralt of Rivia</a></p>
+                <div class="shadow">
+                    <a href="#openModal1"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" /></a>
+                </div>
+            </button>
+        </div>
+       
+
+        <div id="openModal1" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h1 class="align-left">Geralt of Rivia</h1> 
+
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
                 </div>
-            </button>
-            </div>
 
-           <!-- The Modal 1 -->
-            <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div id="container">
-                        <video width="280" height="400" controls loop>
-                            <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/mp4">
-                            <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/ogg">
-                        Your browser does not support the video tag.
-                        </video>
-                        <div class="data">
-                            <h1 class="align-left">Geralt of Rivia</h1> 
-                            <h3>Character:</h3>
-                            <p>Witcher</p>
-                            <h3>Stats:</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div id="two" class="character">
-            <!-- Trigger/Open The Modal -->
-            <button class="myBtn"> 
-                <p class="text-center">Triss Merigold</p>
-                <!-- <a href="geraltofrivia.html"> -->
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
-                </div>
-                <!-- </a> -->
-                </button>
-           </div>  
-
-           <!-- The Modal 2-->
-           <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="container">
-                    <video width="280" height="400" controls loop>
-                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/mp4">
-                        <source src="https://gwent.seven7y.com/video/webm/card/201773.webm" type="video/ogg">
-                    Your browser does not support the video tag.
-                    </video>
-                    <div class="data">
-                        <h1 class="align-left">Triss Merigold</h1> 
-                        <h3>Character:</h3>
-                        <p>Sorceress</p>
-                        <h3>Stats:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Witcher</p>
                 </div>
             </div>
         </div>
+   
+    <!-- END OF NEW SNIPPET TEST 1 -->
+
+    <!-- New Snippet TEST 2 -->
+            <div id="two" class="character">
+                <!-- Trigger/Open The Modal -->
+                <button class="myBtn"> 
+                    <p class="text-center"><a href="#openModal2">Triss Merigold</a></p>
+                    <div class="shadow">
+                        <a href="#openModal2"><img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" /></a>
+                    </div>
+                </button>
+            </div>
+           
+ 
+            <div id="openModal2" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1 class="align-left">Triss Merigold</h1> 
+    
+                    <div class="shadow">
+                        <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
+                    </div>
+    
+                    <div class="data">
+                        <h3>Character:</h3>
+                        <p>Sorceress</p>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- END OF NEW SNIPPET TEST 2  -->
 
 
-            <!-- <div id="three" class="character">
-                <p class="text-center">Xarthisius</p>
+        <!-- New Snippet TEST 3 -->
+        <div id="three" class="character">
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn"> 
+                <p class="text-center"><a href="#openModal3">Xarthisius</a></p>
+                <div class="shadow">
+                    <a href="#openModal3"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" /></a>
+                </div>
+            </button>
+        </div>
+        
+
+        <div id="openModal3" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h1 class="align-left">Xarthisius</h1> 
+
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" />
                 </div>
-            </div> -->
 
-            <div id="three" class="character">
-                <!-- Trigger/Open The Modal -->
-                <button class="myBtn"> 
-                    <p class="text-center">Xarthisius</p>
-                    <!-- <a href="geraltofrivia.html"> -->
-                    <div class="shadow">
-                        <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" />
-                    </div>
-                    <!-- </a> -->
-                    </button>
-               </div>  
-
-            <!-- The Modal 3 -->
-            <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="container">
-                    <video width="280" height="400" controls loop>
-                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/mp4">
-                        <source src="https://gwent.seven7y.com/video/webm/card/112103.webm" type="video/ogg">
-                    Your browser does not support the video tag.
-                    </video>
-                    <div class="data">
-                        <h1 class="align-left">Xarthisius</h1> 
-                        <h3>Character:</h3>
-                        <p>Witcher</p>
-                        <h3>Stats:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Witcher</p>
                 </div>
             </div>
         </div>
 
-            <div id="four" class="character">
+    <!-- END OF NEW SNIPPET TEST 3  -->
+
+        <!-- New Snippet TEST 4 -->
+        <div id="four" class="character">
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn"> 
+                <p class="text-center"><a href="#openModal4">Dragon</a></p>
+                <div class="shadow">
+                    <a href="#openModal4"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" /></a>
+                </div>
+            </button>
+        </div>
+        
+
+        <div id="openModal4" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h1 class="align-left">Dragon</h1> 
+
+                <div class="shadow">
+                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" />
+                </div>
+
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Dragon</p>
+                </div>
+            </div>
+        </div>
+        <!-- END OF New Snippet TEST 4 -->
+
+               <!-- New Snippet TEST 5 -->
+               <div id="five" class="character">
+                <!-- Trigger/Open The Modal -->
+                <button class="myBtn"> 
+                    <p class="text-center"><a href="#openModal5">Yennefer of Vengerberg</a></p>
+                    <div class="shadow">
+                        <a href="#openModal5"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" /></a>
+                    </div>
+                </button>
+            </div>
+            
+    
+            <div id="openModal5" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1 class="align-left">Yennefer of Vengerberg</h1> 
+    
+                    <div class="shadow">
+                        <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" />
+                    </div>
+    
+                    <div class="data">
+                        <h3>Character:</h3>
+                        <p>Female</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF New Snippet TEST 5 -->
+
+
+
+</div>
+
+       
+
+   
+
+            <!-- <div id="four" class="character">
                 <p class="text-center">Dragon</p>
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" />
@@ -261,9 +364,9 @@
                 <div class="shadow">
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg" alt="Iorveth" />
                 </div>
-            </div>
+            </div> -->
 
-    </div>
+    <!-- </div> -->
 </section>
 <script src="script.js"></script>
 <!-- <script>
@@ -293,55 +396,55 @@
     </script>
     <script>
         // Get the modal
-        var modal = document.querySelectorAll(".modal");
+        // var modal = document.querySelectorAll(".modal");
 
         // Get the button that opens the modal
         // var btn = document.getElementById("myBtn");
-        var btn = document.querySelectorAll(".myBtn");
+        // var btn = document.querySelectorAll(".myBtn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close");
+        // var span = document.getElementsByClassName("close");
         
         // When the user clicks the button, open the modal 
-        btn[0].onclick = function() {
-          modal[0].style.display = "block";
-        }
+        // btn[0].onclick = function() {
+        //   modal[0].style.display = "block";
+        // }
 
-        btn[1].onclick = function() {
-          modal[1].style.display = "block";
-        }
+        // btn[1].onclick = function() {
+        //   modal[1].style.display = "block";
+        // }
 
-        btn[2].onclick = function() {
-          modal[2].style.display = "block";
-        }
+        // btn[2].onclick = function() {
+        //   modal[2].style.display = "block";
+        // }
 
-        btn[3].onclick = function() {
-          modal[3].style.display = "block";
-        }
+        // btn[3].onclick = function() {
+        //   modal[3].style.display = "block";
+        // }
         
         // When the user clicks on <span> (x), close the modal
-        span[0].onclick = function() {
-          modal[0].style.display = "none";
-        }
+        // span[0].onclick = function() {
+        //   modal[0].style.display = "none";
+        // }
 
-        span[1].onclick = function() {
-          modal[1].style.display = "none";
-        }
+        // span[1].onclick = function() {
+        //   modal[1].style.display = "none";
+        // }
 
-        span[2].onclick = function() {
-          modal[2].style.display = "none";
-        }
+        // span[2].onclick = function() {
+        //   modal[2].style.display = "none";
+        // }
 
-        span[3].onclick = function() {
-          modal[3].style.display = "none";
-        }
+        // span[3].onclick = function() {
+        //   modal[3].style.display = "none";
+        // }
         
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          } 
-        }
+        // window.onclick = function(event) {
+        //   if (event.target == modal) {
+        //     modal.style.display = "none";
+        //   } 
+        // }
         </script>
 </body>
 </html>
