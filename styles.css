@@ -39,8 +39,11 @@ p.text-center {
 
 header {
     background-color: #181818;
-
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
+
 /* #header {
     height: 350px;
     position: fixed;
@@ -86,6 +89,10 @@ header {
     padding: 10px 35px;
     border: 1px solid white;
     background-color: #181818;
+}
+
+.charContainer {
+    padding-top: 350px;
 }
 
 .collection {
@@ -165,6 +172,7 @@ form {
     justify-content: center;
     width: 35%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 input[type=text], textarea {
