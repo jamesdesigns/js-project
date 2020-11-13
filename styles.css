@@ -147,6 +147,8 @@ img.player {
 .data {
     display: block;
     margin-right: 5rem;
+    margin-top: 80px;
+    margin-left: 5%;
 }
 
 .shadow {
