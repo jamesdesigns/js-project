@@ -13,6 +13,7 @@ body {
 h1{ 
     text-align: center;
     color: #fff;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 h3 {
@@ -21,7 +22,7 @@ h3 {
 }
 
 .align-left {
-    text-align: left;
+    text-align: center;
     font-family: 'Uncial Antiqua', cursive;
     margin-top: 27px;
 }
@@ -39,26 +40,9 @@ p.text-center {
 
 header {
     background-color: #181818;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    z-index: 1000;
-}
-
-/* #header {
-    height: 350px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    transition: 0.2s;
-} */
-
-.header {
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; */
-    background-color: #181818;
+    /* z-index: 1000; */
 }
 
 .logo {
@@ -91,9 +75,9 @@ header {
     background-color: #181818;
 }
 
-.charContainer {
+/* .charContainer {
     padding-top: 350px;
-}
+} */
 
 .collection {
     display: flex;
@@ -322,3 +306,4 @@ input[type=text], textarea {
 }
 
 .close:hover { background: #00d9ff; }
+
