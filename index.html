@@ -9,81 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
-    <style>
-        .link-title {
-            text-decoration: none;
-            color: gray;
-        }
-
-        .link-title:hover,
-        .link-title:active {
-            color: red;
-        }
-
-        .modalContainer {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .modalDialog {
-            position: fixed;
-            font-family: Arial, Helvetica, sans-serif;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 99999;
-            opacity:0;
-            -webkit-transition: opacity 400ms ease-in;
-            -moz-transition: opacity 400ms ease-in;
-            transition: opacity 400ms ease-in;
-            pointer-events: none;
-        }
-    
-        .modalDialog:target {
-            opacity:1;
-            pointer-events: auto;
-        }
-    
-        .modalDialog > div {
-            width: 60%;
-            position: relative;
-            margin: 10% auto;
-            padding: 5px 20px 13px 20px;
-            border-radius: 10px;
-            background: #000;
-            color: white;
-            /* background: -moz-linear-gradient(#fff, #999);
-            background: -webkit-linear-gradient(#fff, #999);
-            background: -o-linear-gradient(#fff, #999); */
-        }
-    
-        .close {
-            background: #606061;
-            color: #FFFFFF;
-            line-height: 25px;
-            position: absolute;
-            right: -12px;
-            text-align: center;
-            top: -10px;
-            width: 24px;
-            text-decoration: none;
-            font-weight: bold;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
-            border-radius: 12px;
-            -moz-box-shadow: 1px 1px 3px #000;
-            -webkit-box-shadow: 1px 1px 3px #000;
-            box-shadow: 1px 1px 3px #000;
-        }
-    
-        .close:hover { background: #00d9ff; }
-    </style>
-    </head>
+</head>
 <body>
 <header>
-    <!-- <h1>The Witcher</h1> -->
     <div class="header">
         <div class="logo"></div>
     </div>
@@ -105,10 +33,8 @@
 <section>
 
     <div class="collection">
-
-        <!-- New Snippet TEST 1 -->
+        <!-- Geralt of Rivia -->
         <div id="one" class="character">
-            <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
                 <p class="text-center"><a class="link-title" href="#openModal1">Geralt of Rivia</a></p>
                 <div class="shadow">
@@ -116,17 +42,13 @@
                 </div>
             </button>
         </div>
-       
-
         <div id="openModal1" class="modalDialog">
             <div class="modalContainer">
                 <a href="#close" title="Close" class="close">X</a>
-
                 <div class="shadow">
                     <h1 class="align-left">Geralt of Rivia</h1>
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/000/848/617/large/marek-madej-gwent-geralt-by-marekmadej.jpg" alt="Geralt of Rivia" />
                 </div>
-
                 <div class="data">
                     <h3>Character:</h3>
                     <p>Witcher</p>
@@ -135,46 +57,34 @@
                 </div>
             </div>
         </div>
-   
-    <!-- END OF NEW SNIPPET TEST 1 -->
 
-    <!-- New Snippet TEST 2 -->
-            <div id="two" class="character">
-                <!-- Trigger/Open The Modal -->
-                <button class="myBtn"> 
-                    <p class="text-center"><a class="link-title" href="#openModal2">Triss Merigold</a></p>
-                    <div class="shadow">
-                        <a href="#openModal2"><img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" /></a>
-                    </div>
-                </button>
-            </div>
-           
- 
-            <div id="openModal2" class="modalDialog">
-                <div class="modalContainer">
-                    <a href="#close" title="Close" class="close">X</a>
-    
-                    <div class="shadow">
-                        <h1 class="align-left">Triss Merigold</h1>
-                        <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
-                    </div>
-    
-                    <div class="data">
-                        <h3>Character:</h3>
-                        <p>Sorceress</p>
-                        <h3>Stats:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-                    </div>
+    <!-- Triss Merigold -->
+        <div id="two" class="character">
+            <button class="myBtn"> 
+                <p class="text-center"><a class="link-title" href="#openModal2">Triss Merigold</a></p>
+                <div class="shadow">
+                    <a href="#openModal2"><img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" /></a>
+                </div>
+            </button>
+        </div>
+        <div id="openModal2" class="modalDialog">
+            <div class="modalContainer">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="shadow">
+                    <h1 class="align-left">Triss Merigold</h1>
+                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/762/014/large/lorenzo-mastroianni-triss-telekinesis.jpg" alt="Triss Merigold" />
+                </div>
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Sorceress</p>
+                    <h3>Stats:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-    
-        <!-- END OF NEW SNIPPET TEST 2  -->
+        </div>
 
-
-        <!-- New Snippet TEST 3 -->
+        <!-- Xarthisius -->
         <div id="three" class="character">
-            <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
                 <p class="text-center"><a class="link-title" href="#openModal3">Xarthisius</a></p>
                 <div class="shadow">
@@ -182,32 +92,24 @@
                 </div>
             </button>
         </div>
-        
-
         <div id="openModal3" class="modalDialog">
             <div class="modalContainer">
                 <a href="#close" title="Close" class="close">X</a>
-
                 <div class="shadow">
                     <h1 class="align-left">Xarthisius</h1>
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/844/331/large/anna-podedworna-xarthisiu2s.jpg" alt="Xarthisius" />
                 </div>
-
                 <div class="data">
                     <h3>Character:</h3>
                     <p>Witcher</p>
                     <h3>Stats:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
                 </div>
             </div>
         </div>
 
-    <!-- END OF NEW SNIPPET TEST 3  -->
-
-        <!-- New Snippet TEST 4 -->
+        <!-- Dragon -->
         <div id="four" class="character">
-            <!-- Trigger/Open The Modal -->
             <button class="myBtn"> 
                 <p class="text-center"><a  class="link-title"href="#openModal4">Dragon</a></p>
                 <div class="shadow">
@@ -215,91 +117,72 @@
                 </div>
             </button>
         </div>
-        
-
         <div id="openModal4" class="modalDialog">
             <div class="modalContainer">
                 <a href="#close" title="Close" class="close">X</a>
-
                 <div class="shadow">
                     <h1 class="align-left">Dragon</h1>
                     <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" />
                 </div>
-
                 <div class="data">
                     <h3>Character:</h3>
                     <p>Dragon</p>
                     <h3>Stats:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
                 </div>
             </div>
         </div>
-        <!-- END OF New Snippet TEST 4 -->
 
-               <!-- New Snippet TEST 5 -->
-               <div id="five" class="character">
-                <!-- Trigger/Open The Modal -->
-                <button class="myBtn"> 
-                    <p class="text-center"><a class="link-title" href="#openModal5">Yennefer of Vengerberg</a></p>
-                    <div class="shadow">
-                        <a href="#openModal5"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" /></a>
-                    </div>
-                </button>
+        <!-- Yennefer of Vengerberg -->
+        <div id="five" class="character">
+        <button class="myBtn"> 
+            <p class="text-center"><a class="link-title" href="#openModal5">Yennefer of Vengerberg</a></p>
+            <div class="shadow">
+                <a href="#openModal5"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" /></a>
             </div>
-            
-    
-            <div id="openModal5" class="modalDialog">
-                <div class="modalContainer">
-                    <a href="#close" title="Close" class="close">X</a>
-    
-                    <div class="shadow">
-                        <h1 class="align-left">Yennefer of Vengerberg</h1> 
-                        <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" />
-                    </div>
-    
-                    <div class="data">
-                        <h3>Character:</h3>
-                        <p>Female</p>
-                        <h3>Stats:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-                    </div>
+        </button>
+        </div>
+        <div id="openModal5" class="modalDialog">
+            <div class="modalContainer">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="shadow">
+                    <h1 class="align-left">Yennefer of Vengerberg</h1> 
+                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" />
+                </div>
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Female</p>
+                    <h3>Stats:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <!-- END OF New Snippet TEST 5 -->
+        </div>
 
-                    <!-- New Snippet TEST 6 -->
-                    <div id="six" class="character">
-                    <!-- Trigger/Open The Modal -->
-                    <button class="myBtn"> 
-                        <p class="text-center"><a class="link-title" href="#openModal6">Cirilla Fiona Elen Riannon</a></p>
-                        <div class="shadow">
-                            <a href="#openModal6"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" /></a>
-                        </div>
-                    </button>
+        <!-- Cirilla Fiona Elen Riannon -->
+        <div id="six" class="character">
+        <button class="myBtn"> 
+            <p class="text-center"><a class="link-title" href="#openModal6">Cirilla Fiona Elen Riannon</a></p>
+            <div class="shadow">
+                <a href="#openModal6"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" /></a>
+            </div>
+        </button>
+        </div>
+        <div id="openModal6" class="modalDialog">
+            <div class="modalContainer">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="shadow">
+                    <h1 class="align-left">Cirilla Fiona Elen Riannon</h1> 
+                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" />
                 </div>
-                
-        
-                <div id="openModal6" class="modalDialog">
-                    <div class="modalContainer">
-                        <a href="#close" title="Close" class="close">X</a>
-        
-                        <div class="shadow">
-                            <h1 class="align-left">Cirilla Fiona Elen Riannon</h1> 
-                            <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" />
-                        </div>
-        
-                        <div class="data">
-                            <h3>Character:</h3>
-                            <p>Female</p>
-                            <h3>Stats:</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-                        </div>
-                    </div>
+                <div class="data">
+                    <h3>Character:</h3>
+                    <p>Female</p>
+                    <h3>Stats:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <!-- END OF New Snippet TEST 6 -->
+            </div>
+        </div>
+
 
                 <!-- New Snippet TEST 7 -->
                 <div id="seven" class="character">
@@ -781,133 +664,40 @@
             </div>
             <!-- END OF New Snippet TEST 21 -->
 
-
+            <!-- New Snippet TEST 22 -->
+            <div id="seven" class="character">
+                <!-- Trigger/Open The Modal -->
+                <button class="myBtn"> 
+                    <p class="text-center"><a class="link-title" href="#openModal22">Iorveth</a></p>
+                    <div class="shadow">
+                        <a href="#openModal22"><img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg" alt="Iorveth" /></a>
+                    </div>
+                </button>
+            </div>
+            
+    
+            <div id="openModal22" class="modalDialog">
+                <div class="modalContainer">
+                    <a href="#close" title="Close" class="close">X</a>
+    
+                    <div class="shadow">
+                        <h1 class="align-left">Iorveth</h1> 
+                        <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg" alt="Iorveth" />
+                    </div>
+    
+                    <div class="data">
+                        <h3>Character:</h3>
+                        <p>Iorveth</p>
+                        <h3>Stats:</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                    </div>
+                </div>
+            </div>
+            <!-- END OF New Snippet TEST 22 -->
 
 </div>
 
-       
-
-   
-
-            <!-- <div id="four" class="character">
-                <p class="text-center">Dragon</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/781/357/large/anna-podedworna-smok.jpg" alt="Dragon" />
-                </div>
-            </div>
-
-            <div class="character">
-                <p class="text-center">Yennefer of Vengerberg</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/883/103/large/anna-podedworna-yennefer2.jpg" alt="Yennefer of Vengerberg" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Cirilla Fiona Elen Riannon</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/004/954/513/medium/anna-podedworna-ciri1.jpg" alt="Cirilla Fiona Elen Riannon" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Caranthir Ar-Feiniel</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/135/634/large/marek-madej-caranthir-by-marekmadej.jpg" alt="Caranthir Ar-Feiniel" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Frightener</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/850/417/large/marta-dettlx-przeraza-small.jpg" alt="Frightener" />  
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Brouver Hoog</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/004/392/006/large/bryan-sola-brouver-hoog.jpg" alt="Brouver Hoog" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Ihuarraquax</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/009/953/986/large/anna-podedworna-ihuarraquaxda.jpg" alt="Ihuarraquax" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Aelirenn</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/829/365/large/lorenzo-mastroianni-gwent-aelirenn-lorenzo-mastroianni.jpg" alt="Aelirenn" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Hemdall</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/003/003/434/large/anna-podedworna-hemdall.jpg" alt="Hemdall" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Golyat</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/011/041/090/large/bryan-sola-golyat.jpg" alt="Golyat" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Francesca Findabair</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/003/937/770/large/lorenzo-mastroianni-gwent-francesca-lorenzo-mastroianni.jpg" alt="Francesca Findabair" />
-                </div>
-            </div>
-
-            <div class="character">
-                <p class="text-center">Assire var Anahid</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/311/235/large/anna-podedworna-assire1.jpg" alt="Assire var Anahid" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Emhyr var Emreis</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/005/002/574/large/nemanja-stankovic-emhyr.jpg" alt="Emhyr var Emreis" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Aguara</p>
-                <div class="shadow">
-                    <img class="player" src="https://vignette.wikia.nocookie.net/witcher/images/9/94/Gwent_cardart_neutral_aguara.jpg" alt="Aguara" />
-                </div>
-            </div>
-
-            <div class="character">
-                <p class="text-center">Ithlinne Aegli aep Aevenien</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/007/205/517/large/bryan-sola-ithlinne-aegli.jpg" alt="Ithlinne Aegli aep Aevenien" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Ocvist</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/003/821/581/large/bartlomiej-gawel-ocvist.jpg" alt="Ocvist" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">King Foltest</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/006/907/285/large/stanton-feng-foltest-1.jpg" alt="King Foltest" />
-                </div>
-            </div>
-            <div class="character">
-                <p>Dandelion</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdna.artstation.com/p/assets/images/images/010/012/492/large/anna-podedworna-jaskierda.jpg" alt="Dandelion" />
-                </div>
-            </div>
-            <div class="character">
-                <p class="text-center">Iorveth</p>
-                <div class="shadow">
-                    <img class="player" src="https://cdnb.artstation.com/p/assets/images/images/005/247/845/large/anna-podedworna-iorveth2222.jpg" alt="Iorveth" />
-                </div>
-            </div> -->
-
-    <!-- </div> -->
 </section>
 <script src="script.js"></script>
 <!-- <script>
