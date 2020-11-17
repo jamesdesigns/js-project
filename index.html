@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body>
 <header>
@@ -67,7 +68,7 @@
         </div>
 
     <!-- Triss Merigold -->
-        <div id="two" class="character">
+        <div id="one" class="character">
             <button class="myBtn"> 
                 <p class="text-center"><a class="link-title" href="#openModal2">Triss Merigold</a></p>
                 <div class="shadow">
@@ -621,7 +622,7 @@
                 <!-- END OF New Snippet TEST 20 -->
 
                 <!-- New Snippet TEST 21 -->
-                <div id="seven" class="character">
+                <div id="one" class="character">
                 <!-- Trigger/Open The Modal -->
                 <button class="myBtn"> 
                     <p class="text-center"><a class="link-title" href="#openModal21">Dandelion</a></p>
@@ -649,7 +650,7 @@
             <!-- END OF New Snippet TEST 21 -->
 
             <!-- New Snippet TEST 22 -->
-            <div id="seven" class="character">
+            <div id="one" class="character">
                 <!-- Trigger/Open The Modal -->
                 <button class="myBtn"> 
                     <p class="text-center"><a class="link-title" href="#openModal22">Iorveth</a></p>
@@ -691,5 +692,43 @@
     };
     document.addEventListener('scroll', handleResize);
 </script>
+
+<script>
+//all tweens run in direct succession
+// var tl = gsap.timeline();
+// tl.to("#openModal1", { duration: 1, x: 0, rotation: -360 }, "+=0.5")
+
+// gsap.to('.logo', {
+//   y: -20, 
+//   scrollTrigger: {
+//     trigger: 'div',
+//     start: 'top bottom',
+//     end: 'center center',
+//     scrub: true
+//   }
+// });
+
+//all tweens run in direct succession
+// var tl = gsap.timeline();
+// tl.to(".logo", {duration: 1, y: 33})
+
+document.getElementById("one").addEventListener('click', moveText)
+
+
+function moveText() {
+    gsap.to('.modalDialog', {
+    duration: 1,
+    x: 30,
+    y: 70,
+    scale: 1.25
+})
+
+gsap.clear();
+}
+
+
+
+</script>
+
 </body>
 </html>
