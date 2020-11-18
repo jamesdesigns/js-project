@@ -315,6 +315,7 @@ input[type=text], textarea {
 .scrollable {
     height: 300px;
     overflow-y: scroll;
+    scrollbar-color: red yellow;
 }
 
 
