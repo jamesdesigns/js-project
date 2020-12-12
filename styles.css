@@ -112,6 +112,7 @@ img {
 }
 
 img.player {
+    display: block;
     width: 280px;
     height: 400px;
     background-repeat: no-repeat;
