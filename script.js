@@ -43,8 +43,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	window.addEventListener("orientationChange", lazyload);
   });
 
+  // This controls the Like Buttons
   function myFunction(x) {
 	x.classList.toggle("fa-heartbeat");
+  }
+
+  // This controls the menu
+  function openNav() {
+	document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
   }
 
 
