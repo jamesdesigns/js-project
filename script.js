@@ -43,6 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	window.addEventListener("orientationChange", lazyload);
   });
 
+  function myFunction(x) {
+	x.classList.toggle("fa-heartbeat");
+  }
+
 
 // fetch('./witcher.json')
 //                 .then(res => res.json())
