@@ -46,10 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // This controls the Like Buttons
-  function myFunction(x) {
+  function geraltOfRivia(x) {
 	window.onload = function() {
-		// Store
-		localStorage.setItem("name", "Geralt of Rivia");
+	// Store
+	 var character1 = localStorage.setItem("name", "Geralt of Rivia");
+	 return character1;
 	}
 	// Retrieve
 	var charName1 = localStorage.getItem("name");
