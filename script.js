@@ -51,10 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // This controls the menu
   function openNav() {
 	document.getElementById("myNav").style.width = "100%";
+	document.getElementById("myNav").style.transitionDuration = ".5s";
   }
   
   function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
+	document.getElementById("myNav").style.transitionDuration = ".5s";
   }
 
 
