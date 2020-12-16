@@ -1,5 +1,6 @@
 // "use strict";
 var counter = 0;  
+const geralt = 'Geralt of Rivia';
 
 // JavaScript code 
 function search_character() { 
@@ -46,9 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // This controls the Like Buttons
   function myFunction(x) {
+	window.onload = function() {
+		// Store
+		localStorage.setItem("name", "Geralt of Rivia");
+	}
+	// Retrieve
+	var charName1 = localStorage.getItem("name");
+	document.getElementById("myresult").innerHTML = charName1;
 	x.classList.toggle("fa-heartbeat");
 	document.querySelector('.favorite').innerHTML = counter += 1;
   }
+
 
   // This controls the menu
   function openNav() {

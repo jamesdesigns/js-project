@@ -52,6 +52,7 @@ header {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -25px;
     transition: width 0.2s ease;
 }
 
@@ -381,4 +382,9 @@ input[type=text], textarea {
     top: 15px;
     right: 35px;
     }
+  }
+
+  #listOfChars {
+      color: gray;
+      font-size: 3rem;
   }
